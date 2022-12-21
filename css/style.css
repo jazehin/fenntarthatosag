@@ -10,15 +10,23 @@
     background-color: var(--white);
 }
 
-.bg-white p, .bg-white a {
+.bg-white p,
+.bg-white a,
+.bg-white span {
     color: var(--forest-green-traditional);
+}
+
+.bg-white a:hover {
+    color: var(--granny-smith-apple);
 }
 
 .bg-green {
     background-color: var(--green-ryb);
 }
 
-.bg-green p, .bg-green a {
+.bg-green p,
+.bg-green a,
+.bg-green span {
     color: var(--forest-green-traditional);
 }
 
@@ -28,17 +36,24 @@
 
 ul#files {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .file {
-    display: block;
+    display: inline-block;
     padding: 1em;
-    margin: 0 1em;
-    max-width: 20em;
+    margin-bottom: 1em;
     background-color: var(--green-ryb);
     color: var(--forest-green-traditional);
     border-radius: 10px;
     text-decoration: none;
+    transition: all ease-in-out 0.2s;
+}
+
+.file:hover {
+    color: var(--granny-smith-apple);
+    transform: scale(1.1);
 }
 
 .file i {
@@ -47,7 +62,23 @@ ul#files {
 
 @media only screen and (width > 768px) {
     .file {
-        
-        margin: 0 1em;
+        max-width: 20em;
     }
+}
+
+a {
+    color: var(--forest-green-traditional);
+}
+
+.video, .video > iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+section:first-of-type {
+    margin-top: 2em;
 }
