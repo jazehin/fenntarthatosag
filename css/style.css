@@ -82,3 +82,8 @@ section {
 section:first-of-type {
     margin-top: 2em;
 }
+
+.top {
+    position: absolute;
+    top: 0.6em;
+}
