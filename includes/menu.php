@@ -1,32 +1,33 @@
 <?php
 
-$content = "main.php";
+$path = "pages/";
+$content = $path . "main.php";
 
 if (isset($_GET["p"])) {
     switch ($_GET["p"]) {
         case 'main':
-            $content = "main.php";
+            $content = $path .  "main.php";
             break;
         case 'haboru':
-            $content = "haboru.php";
+            $content = $path .  "haboru.php";
             break;
         case 'elovilag':
-            $content = "elovilag.php";
+            $content = $path .  "elovilag.php";
             break;
         case 'viz':
-            $content = "viz.php";
+            $content = $path .  "viz.php";
             break;
         case 'terkep':
-            $content = "terkep.php";
+            $content = $path .  "terkep.php";
             break;
         case 'film':
-            $content = "film.php";
+            $content = $path .  "film.php";
             break;
         case 'energiavalsag':
-            $content = "energiavalsag.php";
+            $content = $path .  "energiavalsag.php";
             break;
         default:
-            $content = "main.php";
+            $content = $path .  "main.php";
             break;
     }
 }
