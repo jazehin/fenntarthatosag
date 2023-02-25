@@ -20,7 +20,7 @@
     color: var(--granny-smith-apple);
 }
 
-.bg-green {
+.bg-green, tr:nth-child(even) {
     background-color: var(--green-ryb);
 }
 
@@ -62,7 +62,7 @@ ul#files {
 
 @media only screen and (width > 768px) {
     .file {
-        max-width: 20em;
+        max-width: 25em;
     }
 }
 
@@ -86,4 +86,33 @@ section:first-of-type {
 .top {
     position: absolute;
     top: 0.6em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+background-color: rgba(0,0,0,.5);
+/*width: 40px; / adjust the width as needed /
+height: 40px; / adjust the height as needed */
+top: 50%;
+transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+
+background-size: 100% 100%;
+}
+
+#verebely {
+    max-width: 5rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    min-height: 100vh;
 }

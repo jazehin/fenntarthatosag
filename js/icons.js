@@ -3,8 +3,6 @@ let files = document.getElementsByClassName('file');
 for (let i = 0; i < files.length; i++) {
     let icon = files[i].getElementsByTagName('i')[0];
     let url = files[i].href;
-  
-    console.log(icon, url)
 
     if (url.endsWith(".doc") || url.endsWith(".docx") || url.endsWith(".docm")) {
         icon.classList.add('fa-file-word');
